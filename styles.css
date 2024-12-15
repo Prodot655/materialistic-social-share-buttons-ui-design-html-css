@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.2s;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    flex-direction: column;
+    
+}
+h1{
+    display: unset;
+    font-size: 45px;
+    color: rgb(9, 3, 46);
+    margin-bottom: 70px;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.219);
+}
+.menu_container{
+    display: flex;
+    gap: 5vw;
+}
+.menu_buttons{
+    width: 60px;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: rgb(2, 2, 39);
+    background: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 100%;
+
+    position: relative;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.219);
+
+}
+.menu_buttons:hover{
+    background-color: rgb(2, 2, 39);
+    color: white;
+
+}
+
+.title{
+    width: auto;
+    
+    position: absolute;
+    
+    background-color: rgba(2, 2, 39, 0);
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    left: 0px;
+    overflow: hidden;
+    padding: 0;
+    
+    right: 0%;
+    z-index: -1;
+
+    text-transform: capitalize;
+    
+}
+.title{
+    transform: translateY(00%) rotate(-90deg);
+}
+.menu_buttons:hover .title{
+    transform: translateY(-150%) rotate(0deg);
+}
+.menu_buttons:hover .title{
+    width: auto;
+    left: -10px;
+    right: unset;
+    transform: translateY(-150%) rotate(0deg);
+    padding: 10px 25px;
+    overflow: unset;
+    background-color: rgb(2, 2, 39);
+}
+
+.title::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color:rgb(2, 2, 39);
+    bottom: -7px;
+    left: 27px;
+    transform: rotate(45deg);
+}
